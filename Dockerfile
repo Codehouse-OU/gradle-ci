@@ -1,4 +1,4 @@
-FROM gradle:7.5.1-jdk17
+FROM gradle:8.0.2-jdk17
 MAINTAINER markus.karileet@codehouse.ee
 
 RUN apt update
