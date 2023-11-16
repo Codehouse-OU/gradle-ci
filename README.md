@@ -4,14 +4,14 @@ Mount your Gradle project in /app and build with Gradle
 ```bash
 docker run --rm \
 -v "${PWD}":/app \
-markuskarileet/gradle-ci:latest \
+codehouseou/gradle-ci:latest \
 gradle build
 ```
 
 # Building
 
-* Run `docker build . -t markuskarileet/gradle-ci:latest`
-* Push to Docker Hub `docker push markuskarileet/gradle-ci:latest`
+* Run `docker build . -t codehouseou/gradle-ci:latest`
+* Push to Docker Hub `docker push codehouseou/gradle-ci:latest`
 
 # Libraries and versions
 
@@ -21,4 +21,4 @@ gradle build
 | jdk-17 | x      | Gradle 7.4<br/>JDK 17<br/>GIT<br/>SSH |
 
 # Docker Hub
-https://hub.docker.com/r/markuskarileet/gradle-ci
+https://hub.docker.com/r/codehouseou/gradle-ci
