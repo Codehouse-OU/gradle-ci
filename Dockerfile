@@ -1,8 +1,9 @@
 FROM gradle:7.5.1-jdk17
-MAINTAINER markus.karileet@codehouse.ee
+LABEL maintainer="markus.karileet@codehouse.ee"
 
-RUN apt update
-RUN apt install ssh git -y
+RUN apt update && \
+    apt install ssh git -y && \
+    apt clean
 
 RUN mkdir /app
 WORKDIR /app
