@@ -1,4 +1,4 @@
-FROM gradle:8.4.0-jdk17
+FROM gradle:8.6.0-jdk17
 LABEL maintainer="markus.karileet@codehouse.ee"
 
 RUN apt update && \
